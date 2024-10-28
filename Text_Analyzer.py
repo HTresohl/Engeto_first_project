@@ -77,16 +77,16 @@ if username in users and users[username] == password:
             # Word count
             total_words = len(words)
             
-            # Number of words starting with a capital letter
+            # Amount of words starting with a capital letter
             capitalized_words = sum(1 for word in words if word[0].isupper())
             
-            # Number of capitalized words   
+            # Amount of capitalized words   
             uppercase_words = sum(1 for word in words if word.isupper() and word.isalpha())
             
-            # Number of words in lowercase
+            # Amount of words in lowercase
             lowercase_words = sum(1 for word in words if word.islower())
             
-            # Number of numbers and their sum
+            # Amount of numbers and their sum
             numbers = [int(word) for word in words if word.isdigit()]
             total_numbers = len(numbers)
             sum_numbers = sum(numbers)
